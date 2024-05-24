@@ -7,6 +7,11 @@ const jestConfig: JestConfigWithTsJest = {
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
   },
+  globals: {
+    'ts-jest': {
+      tsconfig: `tsconfig.jest.json`,
+    },
+  },
 };
 
 export default jestConfig;

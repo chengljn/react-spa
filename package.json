@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest --silent --watch"
+    "test": "jest --silent --watch",
+    "test:ci": "jest --no-watchAll --verbose --silent --bail --maxWorkers=25%"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.37.1",
